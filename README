@@ -1,0 +1,10 @@
+bit4games: Micro:bit program collection for tabletop gamers
+
+Author: Alexey Fedoseev, aleksey@fedoseev.net
+License: GPLv3
+
+This package includes trivial applications for tabletop gamers:
+
+* Level counter - level-counter.py
+* D&D Dice simulator - dice.py
+
