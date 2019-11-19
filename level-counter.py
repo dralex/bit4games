@@ -8,16 +8,16 @@
 # Author: Alexey Fedoseev <aleksey@fedoseev.net>, 2019
 # -----------------------------------------------------------------------------
 
-from microbit import *
+import microbit as m
 
 level = 1
-microbit.display.clear()
+m.display.clear()
 
 while True:
-	if button_a.is_pressed() and level > 1:
+	if m.button_a.was_pressed() and level > 1:
 		level -= 1
-	elif button_b.is_pressed() and level < 20:
+	elif m.button_b.was_pressed() and level < 20:
 		level += 1
-	microbit.display.scroll(level)
-	sleep(100)
+	m.display.show(level)
+	m.sleep(100)
 
